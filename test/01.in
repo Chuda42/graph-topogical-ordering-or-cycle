@@ -1,0 +1,5 @@
+crear_personas 4
+leer_lista_muertes 4 3 3 2 2 1 .
+leer_lista_convivencias .
+existe_cronologia
+Fin
