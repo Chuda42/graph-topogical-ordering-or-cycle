@@ -17,9 +17,10 @@ static void noExisteVerticeAgregar(nat naceV, nat muereV, Grafo &G){
 static Grafo crearGrafoDirigido(nat n, ListaDatos tipo1, ListaDatos tipo2){
   Grafo G = crear_grafo(2*n, true);
   ListaDatos iter = tipo1;
-  dato agregar = primer_dato(iter);
+  dato agregar;
   nat nacePi, nacePj, muerePi, muerePj;
   if(!es_vacia_lista_datos(tipo1)){
+    agregar = primer_dato(iter);
     while(iter != NULL){
       nacePi  = id1(agregar);
       muerePi = id1(agregar) + n;
@@ -131,4 +132,4 @@ Cronologia cronologia_consistente(nat n, ListaDatos tipo1, ListaDatos tipo2)
     return NULL;
   }
 
-}
+} 
